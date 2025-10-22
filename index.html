@@ -7,85 +7,108 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article data-testid="test-profile-card">
-      <figure>
-        <img
-          src="images/Profile-img.jpeg"
-          alt="User avatar"
-          data-testid="test-user-avatar"
-        />
-      </figure>
+    <nav class="nav-bar">
+      <h1 class="logo" data-testid="test-portfolio-logo">
+        Oluwatofunmisin Babatunde
+      </h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-      <div class="content">
-        <header>
-          <h2 data-testid="test-user-name" aria-label="User name">
-            Oluwatofunmisin Babatunde
-          </h2>
-        </header>
-
-        <p data-testid="test-user-bio">
-          Frontend developer and creative enthusiast passionate about elegant,
-          accessible, and human-centered design.
-        </p>
-
-        <div class="time">
-          Current Time (ms): <span data-testid="test-user-time"></span>
-        </div>
-
-        <nav
-          data-testid="test-user-social-links"
-          aria-label="User social media links"
-        >
-          <ul>
-            <li>
-              <a
-                href="https://x.com/BabsTofyy?t=gL7FDKndZ6yEKkUx5sJcEw&s=09"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-                >X</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/oluwatofunmisin-babatunde-0aa2ba223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/babstof"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <section>
-          <h3>Hobbies</h3>
-          <ul data-testid="test-user-hobbies">
-            <li>Design exploration</li>
-            <li>Cooking</li>
-            <li>Reading</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Dislikes</h3>
-          <ul data-testid="test-user-dislikes">
-            <li>Procrastination</li>
-            <li>Cluttered UI</li>
-            <li>Unclear communication</li>
-          </ul>
-        </section>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars" id="hamburger-icon" width="200px"></i>
       </div>
-    </article>
+    </nav>
+    <div class="main">
+      <article data-testid="test-profile-card">
+        <figure>
+          <img
+            src="images/Profile-img.jpeg"
+            alt="User avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <div class="content">
+          <header class="header">
+            <h2 data-testid="test-user-name" aria-label="User name">
+              Oluwatofunmisin Babatunde
+            </h2>
+          </header>
+
+          <p data-testid="test-user-bio">
+            Frontend developer and creative enthusiast passionate about elegant,
+            accessible, and human-centered design.
+          </p>
+
+          <div class="time">
+            Current Time (ms): <span data-testid="test-user-time"></span>
+          </div>
+
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="User social media links"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://x.com/BabsTofyy?t=gL7FDKndZ6yEKkUx5sJcEw&s=09"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  >X</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/oluwatofunmisin-babatunde-0aa2ba223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/babstof"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Design exploration</li>
+              <li>Cooking</li>
+              <li>Reading</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Procrastination</li>
+              <li>Cluttered UI</li>
+              <li>Unclear communication</li>
+            </ul>
+          </section>
+
+          <!-- <div class="btn">
+          <button class="btn-btn"><a href="about.html">About </a></button>
+          <button class="btn-btn">
+            <a href="contact.html"> Contact us</a>
+          </button>
+        </div> -->
+        </div>
+      </article>
+    </div>
 
     <script src="script.js"></script>
   </body>
